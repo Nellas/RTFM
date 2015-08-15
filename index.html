@@ -1,27 +1,30 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="rtfmApp">
+<html ng-app="rtfmApp">
 <head>
-    <meta charset="UTF-8">
-    <title>RTFM</title>
-    <link type="text/css" rel="stylesheet" href="style.css" />
+    <title>Firebase Project</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
-<body ng-controller="mainCtrl">
+<body>
 
-<div class="container" ng-view></div>
+<div ng-view></div>
 
-
-<scripts>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
-    <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
-    <script src="https://cdn.firebase.com/libs/angularfire/1.1.2/angularfire.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-route.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/controller.js"></script>
-    <script src="js/threads/threadsCtrl.js"></script>
-    <script src="js/threads/threadsService.js"></script>
-    <script src="js/thread/threadCtrl.js"></script>
-
-</scripts>
+<!-- Angular -->
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.js"></script>
+<!-- Firebase -->
+<script type="text/javascript" src="//cdn.firebase.com/js/client/1.1.0/firebase.js"></script>
+<script type="text/javascript" src="//cdn.firebase.com/libs/angularfire/0.8.2/angularfire.js"></script>
+<!-- App Init -->
+<script type="text/javascript" src="app.js"></script>
+<!-- Controllers -->
+<script type="text/javascript" src="LoginCtrl.js"></script>
+<script type="text/javascript" src="DashboardCtrl.js"></script>
+<script type="text/javascript" src="controller.js"></script>
+<script type="text/javascript" src="threadCtrl.js"></script>
+<script type="text/javascript" src="threadsCtrl.js"></script>
+<!-- Services -->
+<script type="text/javascript" src="authService.js"></script>
+<script type="text/javascript" src="firebaseService.js"></script>
+<script tyoe="text/javascript" src="threadService.js"></script>
 </body>
 </html>
